@@ -64,7 +64,7 @@ header > nav > ul.menu > li > a:hover {
 	padding-left: 24px;
 }
 
-#events {
+.months {
 	margin-top: 16px;
 	padding-top: 16px;
 }
@@ -84,7 +84,7 @@ header > nav > ul.menu > li > a:hover {
 	margin: 0.1em;
 }
 
-#container {
+.container {
 	padding: 0.7em 0;
 	text-align: center;
 }

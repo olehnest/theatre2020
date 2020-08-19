@@ -16,7 +16,7 @@ body {
 
 h1, h2, p, div {
 	margin:0;
-	pading: auto;
+	padding: auto;
 }
 	
 .logo {
@@ -51,7 +51,7 @@ header > nav > ul.menu > li > a:hover {
 }
 
 .WelcomeMessage {
-	border: 3px solid gold;
+	border: 5px solid gold;
 }
 
 .highlight {
@@ -85,10 +85,10 @@ header > nav > ul.menu > li > a:hover {
 }
 
 .container {
-	padding: 0.7em 0;
+	padding: 2em 0;
 	text-align: center;
 }
-#container a {
+.container a {
 	font-size: 16px;
 	text-decoration: none;
 	color: black;
@@ -102,7 +102,7 @@ header > nav > ul.menu > li > a:hover {
 	grid-template-columns: 1fr 1fr;
 }
 	
-	@media (min-width: 500) {
+	@media (min-width: 500px) {
 	.wrapper {
 	display: grid;
 	grid-gap: 5px;
@@ -114,4 +114,42 @@ header > nav > ul.menu > li > a:hover {
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-test {
+  padding-top: 32px;  
+}
+
+input {
+    width: 100%;
+    padding: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    background-color: gold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+
+textarea {
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto';
 }

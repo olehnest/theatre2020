@@ -1,4 +1,4 @@
-const text = document.querySelector(".fancy");
+const text = document.querySelector(".centered");
 const strText = text.textContent;
 const splitText = strText.split("");
 text.textContent = "";
@@ -14,7 +14,7 @@ function onTick() {
   span.classList.add("fade");
   char++;
   if (char === splitText.length) {
-    OfflineAudioCompletionEvent();
+      complete()
     return;
   }
 }

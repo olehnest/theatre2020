@@ -133,64 +133,123 @@ textarea{
 }
 
 footer{
-    bottom: 0px;
-    width: 100%;
-    background: gray;
-    font-size: 12px;
-    font-family: 'Poppins';
-    padding: 16px;
+  max-width: 1140px;
+	margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  background: lightgray;
 }
 
 .main-content{
-    display: flex;
-    max-width: 1140px;
+  display: flex;
 }
-
 .main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
+  flex-basis: 50%;
+  padding: 10px 20px;
 }
-
 .box h2{
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-
 .box .content{
-    margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
+  position: relative;
 }
-
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: gold;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: black;
+  top: -10px;
+}
 .left .content p{
-    text-align: justify;
-    font-family: 'Poppins';
+  text-align: justify;
 }
-
 .left .content .social{
-    margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
 }
-
 .left .content .social a{
-    padding: 0 2px;
+  padding: 0 2px;
 }
-
 .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: gold;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
+  height: 40px;
+  width: 40px;
+  background:gold;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
-
 .left .content .social a span:hover{
-    background: goldenrod;
+  background:goldenrod;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background:gold;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: goldenrod;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color:black;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background:white;
+  padding-left: 10px;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: gold;
+}
+.right form input{
+  height: 35px;
 }
 
-.main-content{
-    color: white;
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
 }
 
 .btn {

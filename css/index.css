@@ -5,7 +5,7 @@
 :root{
 	font-family: 'Poppins';
 	--main-color: black;
-    --font-hover-color: goldenrod;
+	--font-hover-color: goldenrod;
 	scroll-behavior: smooth;
 }
 
@@ -13,7 +13,7 @@ body{
 	max-width: 1140px;
 	margin: 0 auto;
 	background-color: whitesmoke;
-    font-family: 'Poppins'
+    	font-family: 'Poppins'
 }
 
 h1, h2, p, div{
@@ -25,7 +25,7 @@ h1, h2, p, div{
 	padding-top: 20px;
 	font-size: 24px;
 	margin: 24px;
-    font-weight: 100;
+    	font-weight: 100;
 }
 
 .WelcomeMessage{
@@ -39,7 +39,7 @@ h1, h2, p, div{
 }
 
 .calendar{
-    padding-top: 20px;
+    	padding-top: 20px;
 	text-align: left;
 }
 
@@ -59,7 +59,7 @@ h1, h2, p, div{
 
 .card{
  	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    transition: 0.3s;
+    	transition: 0.3s;
 }
 
 .container{
@@ -99,37 +99,37 @@ h1, h2, p, div{
 
 
 input{
-    width: 100%;
-    padding: 20px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 16px;
+    	width: 100%;
+    	padding: 20px 20px;
+    	display: inline-block;
+   	border: 1px solid #ccc;
+   	border-radius: 3px;
+    	box-sizing: border-box;
+    	font-size: 16px;
 }
 
 input[type=submit]{
-    background-color: gold;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
+	background-color: gold;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
 }
 
 input[type=submit]:hover{
-    background-color: lightblue;
+    	background-color: lightblue;
 }
 
 
 textarea{
-    width: 100%;
-    margin-top: 16px;
-    padding: 20px 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Poppins';
+    	width: 100%;
+    	margin-top: 16px;
+    	padding: 20px 20px;
+    	display: inline-block;
+    	border: 1px solid #ccc;
+    	border-radius: 3px;
+    	box-sizing: border-box;
+    	font-size: 16px;
+    	font-family: 'Poppins';
 }
 
 footer{

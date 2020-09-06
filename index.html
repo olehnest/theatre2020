@@ -11,9 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Theatre19</a>
+	<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mynav" id="top">
+  <a class="navbar-brand" href="#top">Theatre19</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,10 +27,10 @@
         <a class="nav-link" href="#">About T19</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Calendar</a>
+        <a class="nav-link" href="#events">Calendar</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Contact us</a>
+        <a class="nav-link" href="#email">Contact us</a>
       </li>
     </ul>
   </div>
@@ -41,15 +41,13 @@
 	<main>
 		<div class="WelcomeMessage">
 			<h1>Welcome to the <span class="highlight">Theater21</span>. We are a contemporary theater with the
-				thrilling plays to present. <span class="highlight">Hope to see you next season!</span></h1>
+				thrilling plays to present. <span class="highlight">Hope to see you next season!</span> 
+                <br>
+                <br>
+                Check our upcoming concerts:</h1>
 		</div>
-		<div class="calendar">
-			<h2>Check our upcoming concerts:</h2>
-		</div>
-
-		<h2 class="months" id="months"><span class="highlight">January 2020</span></h2>
-
-		<div class="wrapper">
+		<h3 class="months">January 2020</h3>
+		<div class="wrapper" id="events">
 			<div class="events">
 				<div class="card">
 					<img src="img/Jan.jpg" alt="event 1"/>
@@ -78,8 +76,7 @@
 			</div>
 		</div>
 
-		<h2 class="months"><span class="highlight">February 2020</span></h2>
-
+		<h3 class="months">February 2020</h3>
 		<div class="wrapper">
 			<div class="events">
 				<div class="card">
@@ -150,15 +147,15 @@
 
 		<div class="right box">
 			<h2>Contact Us</h2>
-			<div class="content">
-				<form action="#">
+			<div class="content" id="email">
+				<form action="https://formspree.io/xbjzngka" method="POST">
 					<div class="email">
-						<div class="text">Email *</div>
-						<input type="email" required>
+						<div class="text" name="_replyto">Email *</div>
+						<input type="email" name="email" required>
                     </div>
 					<div class="msg">
-							<div class="text">Message *</div>
-							<textarea rows="2" cols="25" required></textarea>
+							<div class="text" name="message">Message *</div>
+							<textarea rows="2" cols="25" name="message" required></textarea>
 							<button type="submit" class="btn btn-secondary btn-lg btn-block">Send</button>
 				</form>
 			</div>

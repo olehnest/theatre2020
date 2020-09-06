@@ -8,62 +8,47 @@
 	scroll-behavior: smooth;
 }
 
+
 body{
-	max-width: 1280px;
+	max-width: 1140px;
 	margin: 0 auto;
-	background-color: white;
+	background-color: whitesmoke;
+    font-family: 'Poppins'
 }
 
 h1, h2, p, div{
-	margin:0;
+	margin: 0;
 	padding: auto;
 }
 	
-header nav .menu{
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
-    flex: 1;
-}
-
-header > nav > ul.menu > li > a{
-   	text-transform: uppercase;
-	font-size: 16px;
-	text-decoration: none;
-    color: var(--main-color)
-    padding: 5px;
-}
-
-header > nav > ul.menu > li > a:hover{
-  color: goldenrod;
-}
-
 .WelcomeMessage h1{
 	padding-top: 20px;
 	font-size: 24px;
 	margin: 24px;
+    font-weight: 100;
 }
 
 .WelcomeMessage{
-	border: 5px solid gold;
+    margin-top: 32px;
+	border: 3px solid gold;
+    border-radius: 5px;
 }
 
 .highlight{
-	background-color: gold
-}
-
-.calendar {
 	background-color: gold;
-	text-align: left;
-	padding-left: 24px;
 }
 
-.months {
+.calendar{
+    padding-top: 20px;
+	text-align: left;
+}
+
+.months{
 	margin-top: 16px;
 	padding-top: 16px;
 }
-.events {
+
+.events{
 	padding-bottom: 10px;
 }
 
@@ -73,14 +58,12 @@ header > nav > ul.menu > li > a:hover{
 }
 
 .card{
- 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+ 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
     transition: 0.3s;
-	padding: 0.2em 0;
-	margin: 0.1em;
 }
 
 .container{
-	padding: 2em 0;
+	padding: 1em 0;
 	text-align: center;
 }
 .container a{
@@ -91,29 +74,29 @@ header > nav > ul.menu > li > a:hover{
 }
 
 @media (min-width: 400px){
-	.wrapper {
+	.wrapper{
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1fr 1fr;
+}
 }
 	
-	@media (min-width: 500px){
+@media (min-width: 500px){
 	.wrapper {
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1fr 1fr;
 }
+}
 		
-		@media (min-width: 600px){
+@media (min-width: 600px){
 	.wrapper{
 	display: grid;
 	grid-gap: 5px;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-
-.footer-test{
-  padding-top: 32px;  
 }
+
 
 input{
     width: 100%;
@@ -152,13 +135,15 @@ textarea{
 footer{
     bottom: 0px;
     width: 100%;
-    background: grey;
+    background: gray;
     font-size: 12px;
+    font-family: 'Poppins';
+    padding: 16px;
 }
 
 .main-content{
     display: flex;
-    max-width: 1280px;
+    max-width: 1140px;
 }
 
 .main-content .box{
@@ -178,6 +163,7 @@ footer{
 
 .left .content p{
     text-align: justify;
+    font-family: 'Poppins';
 }
 
 .left .content .social{
@@ -216,3 +202,8 @@ footer{
     font-size: 16px;
     border-radius: 5px;
 }
+
+.mynav{
+    background: gold !important;
+}
+

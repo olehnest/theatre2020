@@ -10,17 +10,34 @@
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
-	<header>
-		<nav>
-			<ul class="menu">
-				<li><a href="#months">About T21</a></li>
-				<li><a href="#months">Calendar</a></li>
-				<li><a href="#form">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
+	<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Theatre19</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About T19</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Calendar</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </header>
+    
+    
 	<main>
 		<div class="WelcomeMessage">
 			<h1>Welcome to the <span class="highlight">Theater21</span>. We are a contemporary theater with the
@@ -142,7 +159,7 @@
 					<div class="msg">
 							<div class="text">Message *</div>
 							<textarea rows="2" cols="25" required></textarea>
-							<button type="submit" class="btn-danger">Send</button>
+							<button type="submit" class="btn btn-secondary btn-lg btn-block">Send</button>
 				</form>
 			</div>
 		</div>

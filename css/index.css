@@ -259,6 +259,7 @@ footer{
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
+    float: center;
 }
 
 .mynav{

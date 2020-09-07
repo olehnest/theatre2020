@@ -7,13 +7,14 @@
 	--main-color: black;
 	--font-hover-color: goldenrod;
 	scroll-behavior: smooth;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 body{
 	max-width: 1140px;
 	margin: 0 auto;
-	background-color: whitesmoke;
+	background-color: white;
     font-family: 'Poppins'
 }
 
@@ -26,7 +27,7 @@ h1, h2, p, div{
 	padding-top: 20px;
 	font-size: 24px;
 	margin: 24px;
-    	font-weight: 100;
+    font-weight: 100;
 }
 
 .WelcomeMessage{
@@ -40,7 +41,7 @@ h1, h2, p, div{
 }
 
 .calendar{
-    	padding-top: 20px;
+    padding-top: 20px;
 	text-align: left;
 }
 
@@ -60,7 +61,7 @@ h1, h2, p, div{
 
 .card{
  	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    	transition: 0.3s;
+    transition: 0.3s;
 }
 
 .container{
@@ -97,16 +98,14 @@ h1, h2, p, div{
 	grid-template-columns: 1fr 1fr 1fr;
 }
 }
-
-
 input{
-    	width: 100%;
-    	padding: 20px 20px;
-    	display: inline-block;
+    width: 100%;
+    padding: 20px 20px;
+    display: inline-block;
    	border: 1px solid #ccc;
    	border-radius: 3px;
-    	box-sizing: border-box;
-    	font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 input[type=submit]{
@@ -117,126 +116,125 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    	background-color: lightblue;
+    background-color: lightblue;
 }
 
-
 textarea{
-    	width: 100%;
-    	margin-top: 16px;
-    	padding: 20px 20px;
-    	display: inline-block;
-    	border: 1px solid #ccc;
-    	border-radius: 3px;
-    	box-sizing: border-box;
-    	font-size: 16px;
-    	font-family: 'Poppins';
+    width: 100%;
+    margin-top: 16px;
+    padding: 20px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins';
 }
 
 footer{
-  max-width: 1140px;
-	margin: 0 auto;
-  bottom: 0px;
-  width: 100%;
-  background: lightgray;
+    max-width: 1140px;
+    margin: 0 auto;
+    bottom: 0px;
+    width: 100%;
+    background: grey;
 }
 
 .main-content{
-  display: flex;
+    display: flex;
 }
 .main-content .box{
-  flex-basis: 50%;
-  padding: 10px 20px;
+    flex-basis: 50%;
+    padding: 10px 20px;
 }
 .box h2{
-  font-size: 1.225rem;
-  font-weight: 300;
-  text-transform: uppercase;
+    font-size: 1.225rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 .box .content{
-  margin: 20px 0 0 0;
-  position: relative;
+    margin: 20px 0 0 0;
+    position: relative;
 }
 .box .content:before{
-  position: absolute;
-  content: '';
-  top: -10px;
-  height: 2px;
-  width: 100%;
-  background: gold;
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: gold;
 }
 .box .content:after{
-  position: absolute;
-  content: '';
-  height: 2px;
-  width: 15%;
-  background: black;
-  top: -10px;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: black;
+    top: -10px;
 }
 .left .content p{
-  text-align: justify;
+    text-align: justify;
 }
 .left .content .social{
-  margin: 20px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .left .content .social a{
-  padding: 0 2px;
+    padding: 0 2px;
 }
 .left .content .social a span{
-  height: 40px;
-  width: 40px;
-  background:gold;
-  line-height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 5px;
-  transition: 0.3s;
+    height: 40px;
+    width: 40px;
+    background:gold;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background:goldenrod;
+    background:goldenrod;
 }
 .center .content .fas{
-  font-size: 18px;
-  background:gold;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  text-align: center;
-  border-radius: 50%;
-  transition: 0.3s;
-  cursor: pointer;
+    font-size: 18px;
+    background:gold;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .center .content .fas:hover{
-  background: goldenrod;
+    background: gold;
 }
 .center .content .text{
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10px;
 }
 .center .content .phone{
-  margin: 15px 0;
+    margin: 15px 0;
 }
 .right form .text{
-  font-size: 18px;
-  margin-bottom: 2px;
-  color:black;
+    font-size: 18px;
+    margin-bottom: 2px;
+    color:black;
 }
 .right form .msg{
-  margin-top: 10px;
+    margin-top: 10px;
 }
 .right form input, .right form .msgForm{
-  width: 100%;
-  font-size: 1.0625rem;
-  background:white;
-  padding-left: 10px;
+    width: 100%;
+    font-size: 1.0625rem;
+    background:white;
+    padding-left: 10px;
 }
 .right form input:focus,
 .right form .msgForm:focus{
-  outline-color: gold;
+    outline-color: gold;
 }
 .right form input{
-  height: 35px;
+    height: 35px;
 }
 
 @media screen and (max-width: 900px) {
@@ -275,41 +273,41 @@ footer{
 }
 
 .image-name{
-  position: relative;
-  text-align: center;
-  color: white;
+    position: relative;
+    text-align: center;
+    color: white;
 }
-
 
 .loader{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  transition: all 0.5s;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: all 0.5s;
 }
 .loader .ring{
-  height: 45px;
-  width: 45px;
-  border: 5px solid #ddd;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 45px;
+    width: 45px;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .loader .ring:after{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  border: 5px solid gold;
-  border-top-color: transparent;
-  animation: rotate 1.5s linear infinite;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid gold;
+    border-top-color: transparent;
+    animation: rotate 1.5s linear infinite;
 }
+
 @keyframes rotate {
   100%{
     transform: rotate(360deg);

@@ -7,13 +7,14 @@
 	--main-color: black;
 	--font-hover-color: goldenrod;
 	scroll-behavior: smooth;
+    padding: 5px;
 }
 
 body{
 	max-width: 1140px;
 	margin: 0 auto;
 	background-color: whitesmoke;
-    	font-family: 'Poppins'
+    font-family: 'Poppins'
 }
 
 h1, h2, p, div{
@@ -148,7 +149,7 @@ footer{
   padding: 10px 20px;
 }
 .box h2{
-  font-size: 1.125rem;
+  font-size: 1.225rem;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -195,7 +196,7 @@ footer{
   background:goldenrod;
 }
 .center .content .fas{
-  font-size: 1.4375rem;
+  font-size: 18px;
   background:gold;
   height: 45px;
   width: 45px;
@@ -209,7 +210,7 @@ footer{
   background: goldenrod;
 }
 .center .content .text{
-  font-size: 1.0625rem;
+  font-size: 18px;
   font-weight: 500;
   padding-left: 10px;
 }
@@ -217,7 +218,7 @@ footer{
   margin: 15px 0;
 }
 .right form .text{
-  font-size: 1.0625rem;
+  font-size: 18px;
   margin-bottom: 2px;
   color:black;
 }
@@ -279,20 +280,45 @@ footer{
   color: white;
 }
 
-.centered {
+
+.loader{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.5s;
+}
+.loader .ring{
+  height: 45px;
+  width: 45px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .ring:after{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 300%;
-  font-family: 'Poppins';
-  font-weight: 800;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid gold;
+  border-top-color: transparent;
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
-span{
-    transition: all 0.5s ease;
-}
-
-span.fade{
-    color: gold;
+.content .image{
+    background: url("golden-_west.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }

@@ -1,25 +1,10 @@
-const text = document.querySelector(".centered");
-const strText = text.textContent;
-const splitText = strText.split("");
-text.textContent = "";
-for (let i = 0; i < splitText.length; i++) {
-  text.innerHTML += "<span>" + splitText[i] + "</span>";
-}
+const loader = document.querySelector(".loader");
+    window.onload = function(){
+      setTimeout(function(){
+        loader.style.opacity = "0";
+        setTimeout(function(){
+          loader.style.display = "none";
+        }, 300);
+      },1000);
+    }
 
-let char = 0;
-let time = setInterval(onTick, 50);
-
-function onTick() {
-  const span = text.querySelectorAll("span")[char];
-  span.classList.add("fade");
-  char++;
-  if (char === splitText.length) {
-      complete()
-    return;
-  }
-}
-
-function complete() {
-  clearInterval(timer);
-  timer = null;
-}
